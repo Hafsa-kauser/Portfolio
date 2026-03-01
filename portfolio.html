@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>  Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.highlight {
+    color: #f97316;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #f97316;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #f97316;
+    color: #f97316;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #f97316;
+}
+
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.home-text h3 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.home-img {
+    flex: 1;
+    text-align: center;
+}
+
+.home-img img {
+    width: 280px;
+    border-radius: 20px;
+}
+
+
+
+.about p {
+    max-width: 100%;
+    margin-top: 20px;
+    color: #d1d5db;
+}
+
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: #f97316 ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: #f97316;
+}
+
+
+
+.project-card {
+    background: #1d1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+    width: 100%;
+    opacity: 70%;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-section {
+    margin-top: 15px;
+    color: white;
+}
+
+.project-img {
+    margin-top: 15px;
+    background:  #1d1c1c;
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+/* Image styling */
+.project-img img {
+  
+   width: 48%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+ 
+}
+
+
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #f97316;
+    text-decoration: none;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #9ca3af;
+}
+
+
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+    <h2><span class="highlight">P</span>ortfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section id="home" class="home">
+    <div class="home-text">
+        <h1>Hi, I'm <span class="highlight">Hafsa Kauser J</span></h1>
+        <h3>Aspiring Software Developer</h3>
+        <p>Computer Science undergraduate aspiring to begin my career as an Associate Software Engineer, focused on building strong fundamentals, solving practical problems, and continuously improving through hands-on experience.</p>
+        <br>
+        <a href="#contact" class="btn btn-primary">Let's Talk</a>
+      
+    </div>
+
+   
+</section>
+
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+       I am a Computer Science undergraduate at Sambhram Institute of Technology (2026) with a CGPA of 8.2, aspiring to begin my career as an Associate Software Engineer. I am focused on building strong fundamentals in software development and continuously improving through hands-on experience.
+
+I have experience working with JavaScript, Java, and Python, along with frontend development using React JS. </p>
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Java</div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    
+    <div class="project-card">
+        <h3>Responsive Landing Page Design</h3>
+
+        <div class="project-section">
+            <strong>Designed and developed a responsive landing page focusing on clean UI, layout structure, and mobile responsiveness. The goal was to improve visual hierarchy and user engagement.</strong>
+            <p></p>
+        </div>
+
+        <div class="project-section">
+            <strong>Tools Used:</strong>
+            <p>React Js,TypeScript</p>
+        </div>
+
+        <div class="project-section">
+            <strong>Output:</strong>
+            <p>The landing page of the system provides a professional interface that explains the caching abstraction layer. It shows the documentation page for the Cachetron tool, including installation steps, CLI setup instructions, and the automatically generated configuration structure. This user-friendly documentation helps developers easily understand how to install, configure, and use the caching abstraction layer.</p>
+        </div>
+
+        <div class="project-img">
+         <img src="assets/Picture1.png">
+           <img src="assets/Picture7.png">
+       
+        </div>
+    </div>
+
+   
+    <div class="project-card">
+        <h3>Powered Caching System for Enhanced Performance- A  Machine Learning Approach
+</h3>
+
+        <div class="project-section">
+            <strong>Description:</strong>
+            <p>The project focuses on using machine learning to improve caching performance in software applications. Traditional caching systems like Redis and Memcached are fast but require manual configuration and are tightly connected to application logic. This project solves these problems by developing a pluggable caching abstraction layer that supports multiple caching backends through a single interface and allows switching between them at runtime. It also includes a machine learning module that predicts optimal cache expiry times (TTL) based on usage patterns, helping reduce manual configuration and improve system performance, scalability, and memory usage.</p>
+        </div>
+
+        <div class="project-section">
+            <strong>Tools Used:</strong>
+            <p>Node js,React js</p>
+        </div>
+
+        <div class="project-section">
+            <strong>Output:</strong>
+            <p>By introducing a unified caching abstraction layer, the system becomes more flexible, maintainable, and independent of specific technologies like Redis or Memcached. The integration of an ML-based TTL prediction model ensures optimal cache expiry times, reducing memory waste and improving performance. Overall, this approach enhances scalability, boosts efficiency, and minimizes manual configuration efforts for developers.
+</p>
+        </div>
+
+        <div class="project-img">
+         <img src="assets/Picture3.png">
+         <img src="assets/Picture4.png">
+        </div>
+    </div>
+
+    
+    <div class="project-card">
+        <h3>NewsLetter</h3>
+
+        <div class="project-section">
+            <strong>Description:</strong>
+        
+ <p>The Newsletter Subscription component is a React + TypeScript form that allows users to register their subscription preferences by entering their name, email address, and choosing the newsletter delivery frequency.</p>
+        </div>
+
+        <div class="project-section">
+            <strong>Tools Used:</strong>
+            <p>React js</p>
+        </div>
+
+        <div class="project-section">
+            <strong>Output:</strong>
+        <p>Upon submitting the newsletter form, the user’s subscription details are captured and logged in the browser console. The form then clears all input fields and displays a confirmation message on the UI indicating that the subscription was recorded successfully. This provides immediate feedback to the user while maintaining a smooth, reload-free interaction experience.
+</p> </div>
+
+        <div class="project-img">
+        <img src="assets/Picture6.png">
+         <img src="assets/Picture5.png">
+        </div>
+    </div>
+
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+        <a href="mailto:hafsakauser157@gmail.com">Email</a>
+        <a href=" https://www.linkedin.com/in/hafsa-kauser-j-87633732a">LinkedIn</a>
+        <a href=" https://github.com/Hafsa-kauser">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Hafsa Kauser J| All Rights Reserved
+</footer>
+
+</div>
+</body>
+</html>
